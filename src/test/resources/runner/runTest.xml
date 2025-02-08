@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT"
+	name="Personal Loan Mobile Automation">
+	<listeners>
+		<listener
+			class-name="com.personalLoan.listeners.TestFilterListener" />
+		<listener
+			class-name="com.personalLoan.listeners.ExtentListeners" />
+		<listener
+			class-name="com.personalLoan.listeners.MyTestListenerAdapter" />
+
+		<listener
+			class-name="com.personalLoan.listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="Personal Loan Mobile Automation - Tests">
+		<classes>
+
+
+			<class name="com.personalLoan.test.Test_LandingPage" />
+			<class
+				name="com.personalLoan.test.Test_BankingPreferencesScreen" />
+			<class name="com.personalLoan.test.Test_ProductSelectionScreen" />
+			<class
+				name="com.personalLoan.test.Test_PL_Rakbank_TellUsAboutYourself" />
+			<class
+				name="com.personalLoan.test.Test_PL_RakbankIslamic_TellUsAboutYourself" />
+			<class name="com.personalLoan.test.Test_PL_PositiveFlow" />
+		</classes>
+	</test>
+</suite>
